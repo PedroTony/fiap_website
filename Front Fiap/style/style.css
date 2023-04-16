@@ -3,27 +3,27 @@
 @font-face{
     font-family: GothamHTF;
     src: url(../fonts/GothamHTF-Book.otf);
+    font-weight: 100;
 }
 
 @font-face{
     font-family: GothamHTF;
     src: url(../fonts/GothamHTF-Medium.otf);
-    font-weight: medium;
+    font-weight: 300;
 }
 
 @font-face{
     font-family: GothamHTF;
     src: url(../fonts/GothamHTF-Bold.otf);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 *{
     margin: 0;
 	padding: 0;
 	border: 0;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
-    white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -39,6 +39,9 @@ body{
     align-items: center;
     justify-content: space-around;
     z-index: 10;
+    font-family: GothamHTF;
+    font-weight: 300;
+    white-space: nowrap;
 }
 
 #img_logo_fiap {
@@ -49,18 +52,16 @@ body{
 .header_links{
     text-decoration: none;
     color: #85969f;
-    font-family: GothamHTF;
-    font-weight: medium;
 }
 
 #header_botao {
     font-family: GothamHTF;
-    font-weight: lighter;
+    font-weight: 100;
     height: 40px;
     width: 143px;
     background-color: rgb(21, 24, 25);
     color: rgb(237, 20, 91);
-    border: 1px solid rgb(237, 20, 91);
+    border: 2px solid rgb(237, 20, 91);
     cursor: pointer;
     font-size: 11px;
     margin-right: 14vw;
@@ -77,11 +78,15 @@ body{
     margin-top: -4vh;
 }
 
-#main_wrapper_introcurso{
+#main_wrapper_introducao{
+    white-space: nowrap;
     color: #91a3ad;
+    min-height: 1008px;
+    font-family: GothamHTF;
 }
 
 #main_wrapper_texto1 {
+    font-weight: 300;
     position: absolute;
     width: 856px;
     left: 0;
@@ -91,10 +96,10 @@ body{
     top: 39vh;
     font-size: 63px;
     letter-spacing: 3.5px;
-    font-weight: 500;
 }
 
 #main_wrapper_texto2 {
+    font-weight: 100;
     width: 1200px;
     left: 0;
     right: 0;
@@ -102,12 +107,12 @@ body{
     margin-right: auto;
     position: absolute;
     top: 48vh;
-    font-weight: 300;
     letter-spacing: 1px;
     font-size: 44px;
 }
 
-#main_botao{
+#main_wrapper_botao{
+    font-weight: 100;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -117,15 +122,118 @@ body{
     height: 40px;
     width: 166px;
     color: rgb(237, 20, 91);
-    border: 1px solid rgb(237, 20, 91);
+    border: 2px solid rgb(237, 20, 91);
     cursor: pointer;
     font-size: 11px;
     background-color: transparent;
 }
 
-#main_botao:hover{
+#main_wrapper_botao:hover{
     background-color: #ed145b;
     color: white;
 }
 
+#main_wrapper_texto3 {
+    font-weight: 100;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 88vh;
+    width: 103px;
+    font-size: 11px;
+}
 
+#main_wrapper_scroll {
+    border: 1px solid #ed145b;
+    border-top: none;
+    border-left: none;
+    display: block;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 91vh;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+#main_curso{
+    display: flex;
+    min-height: 1008px;
+    color: #91a3ad;
+    flex-direction: column;
+}
+
+#main_curso_title {
+    font-family: GothamHTF;
+    font-size: 50px;
+    font-weight: 100;
+    height: fit-content;
+    width: 1200px;
+    margin: 10% auto 0;
+}
+
+#main_curso_container {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+#main_curso_esquerdo {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    width: 540px;
+    line-height: 31px;
+    height: 500px;
+    white-space: normal;
+    margin-right: 4%;
+    font-weight: 100;
+}
+
+#main_curso_divisor {
+    margin-top: -10px;
+    height: 470px;
+    background-color: #91a3ad;
+    margin-right: 4%;
+    width: 1px;
+}
+
+#main_curso_direito{
+    width: 500px;
+    height: 500px;
+    font-family: GothamHTF;
+}
+
+#main_curso_direito_pretexto {
+    color: #ed145b;
+    margin-top: -40px;
+    font-family: GothamHTF;
+    font-weight: 300;
+}
+
+.main_curso_lista {
+    font-weight: 100;
+    color: #616d72;
+    line-height: 31px;
+    margin-top: 7%;
+    list-style-type: none;
+}
+
+li{
+    padding-left: 45px;
+    position: relative;
+}
+
+li::before{
+    background-color: #616d72;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 20px;
+}

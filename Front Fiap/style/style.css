@@ -22,7 +22,7 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
     scroll-behavior: smooth;
 }
 
@@ -161,7 +161,7 @@ body{
     width: 30px;
 }
 
-#main_curso{
+#main_curso {
     display: flex;
     min-height: 832px;
     color: #91a3ad;
@@ -191,13 +191,13 @@ body{
     height: 500px;
     white-space: normal;
     margin-right: 4%;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 #main_curso_divisor {
     margin-top: -10px;
-    height: 470px;
-    background-color: #91a3ad;
+    height: 370px;
+    background-color: #616d72;
     margin-right: 4%;
     width: 1px;
 }
@@ -240,7 +240,7 @@ li::before{
 
 #main_matriz {
     display: flex;
-    min-height: 900px;
+    min-height: 800px;
     color: #91a3ad;
     font-family: GothamHTF;
     flex-direction: column;
@@ -251,7 +251,7 @@ li::before{
     font-weight: 300;
     height: fit-content;
     width: 960px;
-    margin: 10% auto 0;
+    margin: 7% auto 0;
 }
 
 #main_matriz_subtitulo {
@@ -523,5 +523,126 @@ li::before{
     display: block;
 }
 
+#main_turmas_tabela {
+    display: flex;
+    width: 950px;
+    height: 224px;
+    margin: 7% auto 0;
+    flex-direction: column;
+    border: 1px solid #32383b;
+    border-top: 0;
+    border-right: 0;
+    font-family: GothamHTF;
+}
 
+.main_turmas_tabela_secoes{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    border: 1px solid #32383b;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.main_turmas_tabela_subsecoes{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #32383b;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-direction: column;
+}
+
+.main_turmas_tabela_submeio{
+    width: 26%; 
+}
+
+.main_turmas_tabela_sub1_textos{
+    font-weight: 300;
+}
+
+.main_turmas_tabela_campus{
+    color: #ed145b;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_turmas_tabela_duracao {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_turmas_tabela_dias {
+    text-align: center;
+    padding: 6px;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+}
+
+.main_turmas_tabela_horario{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main_turmas_tabela_horario_periodo1{
+    margin-right: 49px;
+}
+
+#main_turmas_tabela_horario_periodo2{
+    margin-right: 53px;
+}
+
+.main_turmas_tabela_subhora{
+    width: 18%;
+}
+
+.main_turmas_tabela_subfinal{
+    width: 22%;
+}
+
+.main_turmas_tabela_valor{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main_turmas_tabela_aviso {
+    position: absolute;
+    color: #616d72;
+    margin-top: 235px;
+    font-size: 11px;
+    font-family: 'Roboto';
+    right: 25%;
+    font-weight: 400;
+}
+
+#main_turmas_botao{
+    margin-top: 80px;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 166px;
+    color: rgb(237, 20, 91);
+    border: 2px solid rgb(237, 20, 91);
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+#main_turmas_botao:hover{
+    background-color: #ed145b;
+    color: white;
+}
 

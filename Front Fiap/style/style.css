@@ -22,7 +22,6 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-    letter-spacing: 0.5px;
     scroll-behavior: smooth;
 }
 
@@ -52,19 +51,30 @@ body{
 .header_links{
     text-decoration: none;
     color: #85969f;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+#header_link_esquerdo{
+    margin-left: 5%;
+}
+
+#header_link_direito{
+    margin-right: 5%;
 }
 
 #header_botao {
     font-family: GothamHTF;
     font-weight: 100;
     height: 40px;
-    width: 143px;
+    width: 150px;
     background-color: rgb(21, 24, 25);
     color: rgb(237, 20, 91);
     border: 2px solid rgb(237, 20, 91);
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     margin-right: 14vw;
+    letter-spacing: 0.05em;
 }
 
 #header_botao:hover{
@@ -85,33 +95,35 @@ body{
     font-family: GothamHTF;
 }
 
+#main_wrapper_setor{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: auto;
+    right: auto;
+    margin: auto;
+    bottom: 440px;
+}
+
 #main_wrapper_texto1 {
     font-weight: 300;
-    position: absolute;
     width: 856px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 39vh;
-    font-size: 63px;
+    font-size: 60px;
     letter-spacing: 3.5px;
 }
 
 #main_wrapper_texto2 {
     font-weight: 100;
     width: 1200px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 48vh;
     letter-spacing: 1px;
-    font-size: 44px;
+    margin-top: 1%;
+    font-size: 40px;
 }
 
-#main_wrapper_botao{
+#main_wrapper_botao {
     font-weight: 100;
     left: 0;
     right: 0;
@@ -120,12 +132,14 @@ body{
     position: absolute;
     top: 60vh;
     height: 40px;
-    width: 166px;
+    width: 160px;
     color: rgb(237, 20, 91);
     border: 2px solid rgb(237, 20, 91);
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     background-color: transparent;
+    font-family: GothamHTF;
+    letter-spacing: 0.05em;
 }
 
 #main_wrapper_botao:hover{
@@ -141,8 +155,8 @@ body{
     margin-right: auto;
     position: absolute;
     top: 88vh;
-    width: 103px;
-    font-size: 11px;
+    width: max-content;
+    font-size: 9px;
 }
 
 #main_wrapper_scroll {
@@ -187,10 +201,11 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
     width: 540px;
-    line-height: 31px;
+    line-height: 30px;
     height: 500px;
     white-space: normal;
     margin-right: 4%;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -247,7 +262,7 @@ li::before{
 }
 
 #main_matriz_titulo {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 300;
     height: fit-content;
     width: 960px;
@@ -285,15 +300,17 @@ li::before{
     border: 1px solid #91a3ad;
 }
 
-#main_matriz_menu1_pretexto{
+#main_matriz_menu1_pretexto {
     margin-left: 25%;
     width: max-content;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.05em;
 }
 
 #main_matriz_botao1 {
-    margin-left: 75%;
+    margin-left: 74%;
     border: 2px solid #ed145b;
     border-radius: 100px;
     height: 50px;
@@ -348,7 +365,7 @@ li::before{
 
 #main_matriz_menu1_titulo {
     color: #ed145b;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.05em;
     line-height: 27px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -368,8 +385,8 @@ li::before{
 
 #main_matriz_menu1_descricao {
     color: #616d72;
-    letter-spacing: 0.4px;
-    line-height: 27px;
+    letter-spacing: 0.05em;
+    line-height: 24px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -388,11 +405,13 @@ li::before{
     overflow: initial;
 }
 
-#main_matriz_menu2_pretexto{
+#main_matriz_menu2_pretexto {
     margin-left: 25%;
     width: max-content;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.05em;
 }
 
 #main_matriz_menu2{
@@ -400,7 +419,7 @@ li::before{
 }
 
 #main_matriz_botao2 {
-    margin-left: 75%;
+    margin-left: 74%;
     border: 2px solid #ed145b;
     border-radius: 100px;
     height: 50px;
@@ -455,7 +474,7 @@ li::before{
 
 #main_matriz_menu2_titulo {
     color: #ed145b;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.05em;
     line-height: 27px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -475,8 +494,8 @@ li::before{
 
 #main_matriz_menu2_descricao {
     color: #616d72;
-    letter-spacing: 0.4px;
-    line-height: 27px;
+    letter-spacing: 0.05em;
+    line-height: 24px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -505,10 +524,10 @@ li::before{
 
 #main_turmas_titulo {
     font-family: GothamHTF;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 300;
     height: fit-content;
-    width: 380px;
+    width: 335px;
     margin: 180px auto 0;
 }
 
@@ -563,8 +582,10 @@ li::before{
     width: 26%; 
 }
 
-.main_turmas_tabela_sub1_textos{
+.main_turmas_tabela_sub1_textos {
     font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 
 .main_turmas_tabela_campus{
@@ -572,12 +593,14 @@ li::before{
     font-size: 14px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 .main_turmas_tabela_duracao {
     font-size: 11px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 .main_turmas_tabela_dias {
@@ -587,12 +610,14 @@ li::before{
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     line-height: 16px;
+    letter-spacing: 0.05em;
 }
 
 .main_turmas_tabela_horario{
     font-size: 11px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 #main_turmas_tabela_horario_periodo1{
@@ -615,16 +640,20 @@ li::before{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 #main_turmas_tabela_aviso {
     position: absolute;
     color: #616d72;
-    margin-top: 235px;
     font-size: 11px;
     font-family: 'Roboto';
-    right: 25%;
+    margin: 235px auto 0;
+    right: auto;
+    width: max-content;
     font-weight: 400;
+    padding-left: 715px;
+    letter-spacing: 0.05em;
 }
 
 #main_turmas_botao{
@@ -633,12 +662,14 @@ li::before{
     margin-left: auto;
     margin-right: auto;
     height: 40px;
-    width: 166px;
+    width: 180px;
     color: rgb(237, 20, 91);
     border: 2px solid rgb(237, 20, 91);
     cursor: pointer;
     font-size: 12px;
     background-color: transparent;
+    letter-spacing: 0.05em;
+    font-family: GothamHTF;
 }
 
 #main_turmas_botao:hover{
